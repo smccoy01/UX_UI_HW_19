@@ -333,7 +333,7 @@ button{
 
   .pic {
 grid-area:SamiiPic;
-border: 1px solid yellow;
+
 height:250%;
 background-image: url("../images/Samii.png");
 background-position:center;
