@@ -1,5 +1,12 @@
- $('a[href*="#"]').on('click', function (e) {
-  e.preventDefault()
+console.log("Your index.js file is loaded correctly! WooHoo!");
+
+
+
+
+
+
+ $('a').on('click', function (event) {
+  event.preventDefault()
 
   $('html, body').animate(
     {
