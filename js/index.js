@@ -1,4 +1,4 @@
-$('a[href*="#"]').on('click', function (e) {
+ $('a[href*="#"]').on('click', function (e) {
   e.preventDefault()
 
   $('html, body').animate(
@@ -7,5 +7,4 @@ $('a[href*="#"]').on('click', function (e) {
     },
     600,
     'linear'
-  )
 })
