@@ -1,12 +1,204 @@
-<!<!DOCTYPE html>
-<link rel="stylesheet" href="CSS/style.css" type="text/css">
+<!DOCTYPE html>
+
 <head>
+  <link rel="stylesheet" href="CSS/style.css" type="text/css">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Puritan&display=swap" rel="stylesheet">
+  <title>Samii's Portfolio HW19</title>
+</head>
 
-  <title>HW19</title>
-  </head>
+<body>
 
-  <body>
-    <div>
-      <h1>Hi!</h1>
+  <div class="flexContainer nav">
+    <a href="#"><img src="images/logo.png" class="logo"></a>
+    <ul class="navigation">
+      <li><a href="#about">about</a></li>
+      <li><a href="#skills">skills</a></li>
+      <li><a href="#work">work</a></li>
+      <li><a href="#contact">contact</a></li>
+    </ul>
+  </div>
+
+  <section class="heroImg heroGrid">
+
+
+      <div class="greeting">
+        <h1>Hello! <br>I'm Samii.</h1>
+        <p>UX Designer <br> Empathizer <br> Critical Thinker</p>
       </div>
-    </body>
+
+
+      <div class="pic">
+      </div>
+<div class="Rbutton">
+
+
+      <button class="resume">Download Resume</button>
+</div>
+  </section>
+
+
+  <section class="aboutMe" id="about">
+
+    <h1>About Samii</h1>
+
+    <div class="aboutPic">
+      <img src="images/SamiisCirclePic.png" id="circPic" alt="Circular Pic of Samii">
+    </div>
+<div class="aboutText">
+
+
+    <p>
+      In a another career, Samii is known as Ms. McCoy to over 1,000 elementary students. As an educator,she finds success at the intersection of empathy, critical thinking and problem-solving; three skills that serve her well as a UX
+      Researcher.
+    </p>
+    <p>
+      Samii defines and solves design problems through data driven research and <br> the double diamond design process. Her work allows businesses to empathize with customers and enhance their experience.
+    </p>
+    <p>
+      Samii’s skills include Figma, Sketch, Miro, 1:1 and group interviews and stakeholder communication.
+
+    </p>
+</div>
+    </div>
+
+  </section>
+
+  <!--  My UX Skills section coded using CSS flex -->
+  <section class="mySkills" id="skills">
+    <h1>UX Skills</h1>
+    <div class="flexContainer">
+
+      <div class="skill1">
+        <img src="images/Glasses.png" id="glasses">
+        <h2>User Empathy</h2>
+        <p>I use my natural curiosity and love of learning
+          to listen to what customers say, observe what they do
+          and ask about what drives their decisions.</p>
+      </div>
+
+      <div class="skill2">
+        <img src="images/funnel.png" id="funnel">
+        <h2>User Research</h2>
+        <p>
+          I approach user research from a funneling perspective.
+          Broad data patterns emerge from surveys,
+          which guide the development of the interview process.
+        </p>
+      </div>
+
+      <div class="skill3">
+        <img src="images/lightbulb.png" id="bulb">
+        <h2>User Interviews</h2>
+        <p>
+          I develop interview questions around
+          survey data, observations,business trends and
+          business goals so that interviews draw out actionable user insights.
+        </p>
+      </div>
+
+    </div>
+
+    <div class="flex-cont">
+      <h2>Familiar Tools</h2>
+      <div class="tools">
+        <div class="list">
+          <ul>
+            <li>Paper and Pencil</li>
+            <li>Figma</li>
+            <li>Adobe XD</li>
+            <li>Miro</li>
+          </ul>
+        </div>
+
+        <div class="list">
+          <ul>
+            <li>InVision</li>
+            <li>Google Workspace</li>
+            <li>Zoom</li>
+            <li>Trello</li>
+          </ul>
+        </div>
+
+      </div>
+  </section>
+
+
+  <!-- My Work Section Constructed using CSS Grid -->
+  <section class="myWork" id="work">
+    <h1>Work</h1>
+
+    <div class="workGrid">
+
+      <div class="csPic" id="csP1">
+      </div>
+
+      <div class="csDescript" id="csD1">
+        <h3>Let'sGo!</h3>
+        <p>A travel app that simplifies, enhances and connects</p>
+        <button>Learn More</button>
+      </div>
+
+      <div class="csPic" id="csP2">
+      </div>
+
+      <div class="csDescript" id="csD2">
+        <h3>Gangstas to Growers</h3>
+        <p>Responsive redesign for a community organization</p>
+        <button>Learn More</button>
+      </div>
+
+      <div class="csPic" id="csP3">
+
+      </div>
+
+      <div class="csDescript" id="csD3">
+        <h3>En Masse</h3>
+        <p>Gamification of household accountability</p>
+        <button>Learn More</button>
+      </div>
+
+    </div>
+
+    <h2>View All Projects</h2>
+
+  </section>
+
+  <section id="contact">
+
+<div class="contactForm">
+
+  <h1>Let's Connect!</h1>
+
+  <div class="container">
+
+  <form action="action_page.php">
+
+    <label for="fname">First Name</label>
+    <input type="text" id="fname" name="firstname" placeholder="First name">
+
+    <label for="lname">Last Name</label>
+    <input type="text" id="lname" name="lastname" placeholder="Last name">
+
+    <label for="email">Email</label>
+    <input type="text" id="email" name="emailAddress" placeholder="Email">
+
+
+    <label for="phone">Phone Number</label>
+    <input type="text" id="phone" name="phoneNumber" placeholder="Phone">
+
+    <label for="message">Type Your Message</label>
+    <textarea id="message" name="message" placeholder="Type Your Message" style="height:200px"></textarea>
+
+    <input type="submit" value="Submit">
+
+  </form>
+</div>
+</div>
+
+  </section>
+
+
+</body>
+
+</body>

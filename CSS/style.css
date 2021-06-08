@@ -1,3 +1,407 @@
+.aboutPic{
+align-items: center;
+width:100%;}
+
+#circPic{
+  width: 13vw;
+  display:block;
+  margin: auto;
+  -webkit-filter: grayscale(100%);
+  filter: grayscale(100%);
+
+}
+
+.aboutText{
+border: 1px solid #504B4B;
+background-color: rgba(0, 0, 0, 0.5);
+  font-size: 2em;
+  font-family: puritan, sans-serif;
+  margin-top: 5%;
+}
 body{
-  background-color: red;
+    background: url(https://imgur.com/VI5FJjY.png) no-repeat center center fixed;
+    background-size: cover;
+    height: 100%;
+  color: white;
+  font-family: Puritan, sans-serif;
+}
+
+.nav{
+  background-color: black;
+  padding:0; margin:0;}
+
+h1{
+  font-size: 5em;
+  text-align:center;
+}
+h2{
+  font-size: 3em;
+  text-align: center;
+}
+
+h3{font-size: 2em;}
+.navigation li{
+  font-family: didot;
+  font-weight: 700;
+  font-size: 200%;
+  list-style-type: none;
+}
+.navigation{
+  display:flex;
+}
+
+.navigation a{
+  display: block;
+  padding: 1em;
+  color: white;
+}
+
+.navigation a:link{
+  text-decoration: none;
+}
+
+  .navigation a:hover{
+    background-color: #3B3939;
+  }
+
+
+  .heroGrid{
+
+    margin: 0 ;
+    display: grid;
+    min-height: 500px;
+    height: 70vh;
+    grid-template-rows: 1fr, 1fr, 1fr;
+    grid-template-columns: 1fr, 1fr, 1fr ;
+    grid-template-areas:
+    "greeting SamiiPic SamiiPic"
+    "greeting SamiiPic SamiiPic"
+    "rButton rButton rButton";
+  }
+
+
+
+
+  .greeting {
+  grid-area: greeting;
+  color: white;
+  font-family: puritan;
+
+  text-align: center;
+  }
+
+.greeting p{
+  font-size: 1.5em;
+}
+
+  .pic {
+grid-area:SamiiPic;
+background-image: url("../images/Samii.png");
+background-position:right;
+  background-size:contain;
+  background-repeat: no-repeat;
+
+}
+.Rbutton{
+  grid-area: rButton;
+  height:40%;
+display:flex;
+align-items: center;
+justify-content: center;
+}
+
+
+.resume button {
+  position: absolute;
+  margin: auto ;
+  background-color: black;
+  border: 1px solid #504B4B;
+  border-radius: 7px;
+  color: white;
+  padding: 1.5%;
+  text-align: center;
+  font-size: 1em;
+  font-family: Didot;
+}
+
+#profile_pic{
+margin-top: auto;
+margin-left: auto;
+
+}
+
+.mySkills{
+  text-align: center;}
+
+ #funnel{
+  width:10%;}
+
+
+#glasses{
+  width: 23%;}
+
+#bulb{
+  width:16%;}
+
+.flexContainer{
+display:flex;
+align-items: center;
+justify-content: space-between;
+}
+
+.flex-cont{
+  border: 1px solid #504B4B;
+  border-radius: 7px;
+  background-color: black;
+  width: fit-content;
+  display:flex;
+  margin: auto;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: column;
+}
+
+.flex-cont h2{
+text-transform: uppercase;
+justify-content: flex-start;
+}
+
+.skill1{
+  border: 1px solid #504B4B;
+  border-radius: 7px;
+  width:33%;
+  text-align: center;
+  margin: 2%;
+
+  background-color: black;
+}
+
+.skill2{
+  border: 1px solid #504B4B;
+  border-radius: 7px;
+  width:33%;
+  text-align: center;
+  margin: 2%;
+  background-color: black;
+}
+
+.skill3{
+  border: 1px solid #504B4B;
+  border-radius: 7px;
+  width:33%;
+  text-align: center;
+  margin: 2%;
+  background-color: black;
+}
+
+.tools{
+  text-align: center;
+  margin: 2%;
+  display: flex;
+  flex-direction:row;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.list{
+  text-align: left;
+  padding: 10px 20px;
+}
+
+.tools li{
+list-style-type: none;
+}
+
+
+.workGrid{
+  display:grid;
+  grid-template-columns: 1fr 2fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  grid-template-areas:
+  "csP1 csD1"
+  "csP2 csD2"
+  "csP3 csD3"
+;
+  grid-row-gap: 1em;
+}
+
+#csP1{
+  grid-area:csP1;
+  -webkit-filter: grayscale(100%);
+  filter: grayscale(100%);
+  background-image: url("../images/travel.jpg");
+  height: 100%;
+}
+
+#csP2{
+  grid-area:csP2;
+  -webkit-filter: grayscale(100%);
+  filter: grayscale(100%);
+  background-image: url("../images/blackfarmer.jpg");
+  height: 100%;
+
+}
+
+#csP3{
+  grid-area:csP3;
+  -webkit-filter: grayscale(100%);
+  filter: grayscale(100%);
+  background-image: url("../images/dishes.jpg");
+  height: 100%;
+}
+
+#csD1{
+  grid-area:csD1;
+}
+#csD2{
+  grid-area:csD2;
+}
+#csD3{
+  grid-area:csD3;
+}
+
+.csPic{
+  border: 1px solid #504B4B;
+  border-radius: 7px;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.csPic img{
+  width:100%;
+}
+.csDescript{
+  border: 1px solid #504B4B;
+  border-radius: 7px;
+padding:2%;
+background-color: black;
+grid-area:csD;
+
+font-family: puritan, sans-serif;}
+
+button{
+  border: 1px solid #504B4B;
+  border-radius: 7px;
+  color: white;
+  background-color: black;
+  border-radius: 7%;
+  margin: auto;
+  width: 16%;
+  text-align: center;
+
+}
+
+.contactForm input[type=text], select, textarea {
+  display: inline-block;
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #504B4B;
+  border-radius: 7px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+
+}
+
+
+
+
+.contactForm{
+  border: 1px solid #504B4B;
+  border-radius: 7px;
+  background-color: rgba(0, 0, 0, 0.5);
+ padding: 20px;
+ font-family: puritan, sans-serif;
+}
+
+@media only screen and (max-width:800px) {
+
+.heroGrid{
+  display:grid;
+  grid-template-columns: 1fr, 1fr, 1fr;
+  grid-template-areas:
+  "SamiiPic"
+  "greeting"
+  "rButton";
+}
+
+.greeting p{
+  font-size: 1.5em;
+}
+
+  .pic {
+grid-area:SamiiPic;
+border: 1px solid yellow;
+height:250%;
+background-image: url("../images/Samii.png");
+background-position:center;
+  background-size:contain;
+  background-repeat: no-repeat;
+
+}
+.Rbutton{
+  grid-area: rButton;
+  height:40%;
+display:flex;
+align-items: center;
+justify-content: center;
+}
+
+  .flexContainer{
+    display:flex;
+    flex-direction: column;
+  }
+
+  .skill1{
+    border: 1px solid #504B4B;
+    border-radius: 7px;
+    width:100%;
+    text-align: center;
+    margin: 2%;
+
+    background-color: black;
+  }
+
+  .skill2{
+    border: 1px solid #504B4B;
+    border-radius: 7px;
+    width:100%;
+    text-align: center;
+    margin: 2%;
+    background-color: black;
+  }
+
+  .skill3{
+    border: 1px solid #504B4B;
+    border-radius: 7px;
+    width:100%;
+    text-align: center;
+    margin: 2%;
+    background-color: black;
+  }
+
+.flex-cont{
+  border: 1px solid #504B4B;
+  border-radius: 7px;
+background-color: black;
+width: 100%;
+display:flex;
+margin: auto;
+align-items: center;
+justify-content: space-between;
+flex-direction: column;
+}
+  .tools{
+    width:100%;
+  }
+  .csPic {
+    display:flex;
+background-color: black;
+justify-content: center;
+align-items: center;
+ width:100%;}
+
+
 }
